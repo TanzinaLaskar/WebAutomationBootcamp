@@ -16,6 +16,7 @@
         <module>Cnn</module>
         <module>Citibank</module>
         <module>Cigna</module>
+        <module>RestApi</module>
     </modules>
 
     <properties>
