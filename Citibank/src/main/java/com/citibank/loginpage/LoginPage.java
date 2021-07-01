@@ -1,4 +1,4 @@
-package citibank.loginpage;
+package com.citibank.loginpage;
 
 import common.TestBase;
 import org.openqa.selenium.WebElement;

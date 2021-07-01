@@ -1,4 +1,4 @@
-package citibank.creditcardpage;
+package com.citibank.creditcardpage;
 
 import common.TestBase;
 import org.openqa.selenium.WebElement;

@@ -1,4 +1,4 @@
-package citibank.pages;
+package com.citibank.pages;
 
 import common.TestBase;
 import org.openqa.selenium.WebElement;

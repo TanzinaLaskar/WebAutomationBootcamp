@@ -1,4 +1,4 @@
-package citibank.searchPage;
+package com.citibank.searchPage;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
