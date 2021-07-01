@@ -1,4 +1,4 @@
-package com.cnnalltest;
+package com.cnn.alltest;
 
 import common.TestBase;
 

@@ -1,4 +1,4 @@
-package com.cnnalltest;
+package com.cnn.alltest;
 import com.cnn.pages.LoginPage;
 import common.TestBase;
 import org.apache.log4j.Logger;
