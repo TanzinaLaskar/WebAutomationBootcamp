@@ -28,7 +28,7 @@ public class SendAFriendRequest extends TestBase {
         emailField.sendKeys(emails);
         passwordField.sendKeys(pass);
         loginButton.click();
-        waitForElementToBeLocated(searchBox,20).sendKeys("mr alom");
+        waitForElementToBeLocated(searchBox,20).sendKeys("Ms Laskar");
         searchButton.click();
         friendRequestButton.click();
 

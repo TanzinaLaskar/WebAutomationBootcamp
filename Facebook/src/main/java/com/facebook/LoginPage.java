@@ -29,12 +29,12 @@ public class LoginPage extends TestBase {
 
 
   public void emailField() {
-    emailField.sendKeys("meah2401@gmail.com");
+    emailField.sendKeys("tanzinalaskarit@gmail.com");
   }
 
 
   public void passwordField() {
-    passwordField.sendKeys("Moto2020");
+    passwordField.sendKeys("Official1");
   }
 
   public void loginButton() {

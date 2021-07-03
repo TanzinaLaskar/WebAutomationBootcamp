@@ -15,6 +15,7 @@
         <classes>
             <class name="com.cnn.alltest.LoginTest"/>
 <!--            <class name="com.cnn.alltest.NavigationTest"></class>-->
+            <class name="com.cnn.alltest.PoliticesLinkTest"></class>
         </classes>
     </test>
 
