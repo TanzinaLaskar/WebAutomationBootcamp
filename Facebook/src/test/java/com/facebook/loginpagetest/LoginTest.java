@@ -11,7 +11,7 @@ import reporting.ExtentTestManager;
 
 public class LoginTest extends TestBase {
     private static final Logger logger = Logger.getLogger(LoginTest.class);
-    LoginPage loginPage;
+    private LoginPage loginPage;
 
     //Positive Test
     @Test(priority = 1)

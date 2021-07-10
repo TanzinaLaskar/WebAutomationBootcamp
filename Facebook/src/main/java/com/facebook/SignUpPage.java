@@ -4,6 +4,8 @@ import common.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.time.Month;
+
 public class SignUpPage extends TestBase {
     @FindBy(xpath = "//a[contains(text(),'Sign Up')]")
     private WebElement signUpLink;
@@ -60,12 +62,10 @@ public class SignUpPage extends TestBase {
         newPassword.sendKeys(newPasswords);
     }
 
-    public void monthDropDown() {
-        selectByVisibleText(month, "Mar");
+    public void selectMonthFromDropDown(String month) {
     }
-
     public void dayDropDown() {
-        selectByVisibleText(day, "6");
+        selectByVisibleText(day, "5");
     }
 
     public void yearDropDown() {

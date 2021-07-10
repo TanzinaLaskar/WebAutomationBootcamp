@@ -1,6 +1,5 @@
-package com.amazon.addtocarttest;
+package com.amazon.cartpage;
 
-import com.amazon.addtocartpage.ChangeQuantityFromAddToCart;
 import common.TestBase;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;

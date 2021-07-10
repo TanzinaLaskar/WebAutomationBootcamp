@@ -1,4 +1,4 @@
-package com.amazon.addtocartpage;
+package com.amazon.cartpage;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
