@@ -16,16 +16,16 @@ public class SearchItemFromDatabaseTest extends TestBase {
 
     @Test
     public void validateUserSearchAnItemFromDataBase() throws SQLException {
-        String query = "select * from testdata; ";
-        ArrayList<String> datas = connectToDataBaseAndGetData(query,"booknames");
+        String query = "select * from testData; ";
+        ArrayList<String> data = connectToDataBaseAndGetData(query,"booknames");
          searchItemFromDatabase =PageFactory.initElements(driver,SearchItemFromDatabase.class);
         ExtentTestManager.log("Get data from database",logger);
-        searchItemFromDatabase.typeOnSearchBar(datas.get(0));
-        searchItemFromDatabase.typeOnSearchBar(datas.get(1));
-        searchItemFromDatabase.typeOnSearchBar(datas.get(2));
-        ExtentTestManager.log(datas.get(0) + " type on search bar", logger);
-        ExtentTestManager.log(datas.get(1) + " type on search bar", logger);
-        ExtentTestManager.log(datas.get(2) + " type on search bar", logger);
+        searchItemFromDatabase.typeOnSearchBar(data.get(0));
+        searchItemFromDatabase.typeOnSearchBar(data.get(1));
+        searchItemFromDatabase.typeOnSearchBar(data.get(2));
+        ExtentTestManager.log(data.get(0) + " type on search bar", logger);
+        ExtentTestManager.log(data.get(1) + " type on search bar", logger);
+        ExtentTestManager.log(data.get(2) + " type on search bar", logger);
         searchItemFromDatabase.clickOnSearchButton();
         ExtentTestManager.log("Clicked on search bar", logger);
     }

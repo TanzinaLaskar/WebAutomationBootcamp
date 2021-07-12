@@ -15,7 +15,7 @@ public class SearchTest extends TestBase {
     private static final Logger logger = Logger.getLogger(SearchTest.class);
 
     @Test(dataProviderClass = DataProviderTest.class,dataProvider = "getDataForSearchTest")
-    public void validateUserSearchAnItem(String productName){
+    public void usersCanValidateUserSearchAnItem(String productName){
         SearchPage searchPage = PageFactory.initElements(driver, SearchPage.class);
          searchPage.typeOnSearchBar(productName);
          ExtentTestManager.log(productName+" type on search bar",logger);

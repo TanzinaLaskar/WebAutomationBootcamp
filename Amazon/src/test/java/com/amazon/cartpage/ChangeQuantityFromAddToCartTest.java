@@ -10,9 +10,9 @@ public class ChangeQuantityFromAddToCartTest extends TestBase {
      private ChangeQuantityFromAddToCart changeQuantityFromAddToCart;
 
     @Test
-    public void validateChangeQuantityTest(){
+    public void usersCanValidateChangeQuantityTest(){
         changeQuantityFromAddToCart = PageFactory.initElements(driver,ChangeQuantityFromAddToCart.class);
-        changeQuantityFromAddToCart.ClickOnCartButton();
+        changeQuantityFromAddToCart.clickOnCartButton();
         changeQuantityFromAddToCart.clickOnQuantityButton();
         changeQuantityFromAddToCart.clickOnQuantityNumber();
 

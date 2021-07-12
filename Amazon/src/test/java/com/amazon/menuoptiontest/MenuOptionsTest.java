@@ -14,14 +14,14 @@ public class MenuOptionsTest extends TestBase {
 
 
     @Test(priority = 1,description = "verifying amazon option Test")
-    public void validateMenuOptionTest(){
+    public void usersCanValidateMenuOptionTest(){
         menuOption = PageFactory.initElements(driver,MenuOption.class);
-        menuOption.validateMobileApp();
+        menuOption.validateMenuOptions();
         ExtentTestManager.log("All option selected Successfully",logger);
 
     }
     @Test(priority = 2,description = "check audioBook link display",enabled = false)
-    public void validateAllOptionsDisplayTest(){
+    public void usersCanValidateAllOptionsDisplayTest(){
          menuOption = PageFactory.initElements(driver,MenuOption.class);
         Assert.assertTrue(  menuOption.optionsDisplay());
         ExtentTestManager.log("AudioBook display",logger);

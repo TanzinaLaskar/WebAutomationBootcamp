@@ -19,7 +19,7 @@ public class SearchItemFromDatabase extends TestBase {
         searchButton.click();
     }
 
-    public String searchPageTitle(){
+    public String SearchPageTitle(){
         return  getTitle();
     }
 }

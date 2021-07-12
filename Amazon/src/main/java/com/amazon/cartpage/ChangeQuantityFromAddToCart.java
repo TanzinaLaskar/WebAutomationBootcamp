@@ -15,7 +15,7 @@ public class ChangeQuantityFromAddToCart {
     @FindBy(xpath = "//a[@id='dropdown7_3']")
     private WebElement quantityNumber;
 
-    public void ClickOnCartButton(){
+    public void clickOnCartButton(){
         cart.click();
     }
 

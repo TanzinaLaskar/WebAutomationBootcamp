@@ -34,7 +34,7 @@ public class RegistrationPage {
 
 
 
-    public void clickObSignInButton(){
+    public void clickOnSignInButton(){
         signInButton.click();
     }
     public void clickAmazonAccountlink(){
@@ -58,17 +58,17 @@ public class RegistrationPage {
        return createAccountText.getText();
     }
 
-    public void createAccoutButton(){
+    public void clickOnAccountButton(){
         createAccount.click();
     }
 
-    public String errorMessageForName(){
+    public String getErrorMessageForName(){
        return nameText.getText();
     }
-    public String errorMessageForEmail(){
+    public String getErrorMessageForEmail(){
         return emailText.getText();
     }
-    public String errorMessageForPassword(){
+    public String getErrorMessageForPassword(){
         return passwordText.getText();
     }
 
