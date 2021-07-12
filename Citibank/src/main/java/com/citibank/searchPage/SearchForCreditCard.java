@@ -24,7 +24,7 @@ public class SearchForCreditCard {
        finalSearchBox.click();
    }
 
-   public String searchResultTText(){
+   public String getSearchResultTText(){
       return travelCreditCardInformation.getText();
    }
 

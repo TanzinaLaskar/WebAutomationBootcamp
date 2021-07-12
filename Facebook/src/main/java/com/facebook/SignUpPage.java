@@ -46,47 +46,47 @@ public class SignUpPage extends TestBase {
     private WebElement signUpButton;
 
 
-    public void firstName(String firstNames) {
+    public void enterFirstName(String firstNames) {
         firstName.sendKeys(firstNames);
     }
 
-    public void lastName(String lastNames) {
+    public void enterLastName(String lastNames) {
         lastName.sendKeys(lastNames);
     }
 
-    public void mobileNumber(String mobileNumber) {
+    public void enterMobileNumber(String mobileNumber) {
         mobileAndEmail.sendKeys(mobileNumber);
     }
 
-    public void newPassword(String newPasswords) {
+    public void enterNewPassword(String newPasswords) {
         newPassword.sendKeys(newPasswords);
     }
 
     public void selectMonthFromDropDown(String month) {
     }
-    public void dayDropDown() {
+    public void selectDayFromDropDown() {
         selectByVisibleText(day, "5");
     }
 
-    public void yearDropDown() {
+    public void selectYearDropDown() {
         selectByVisibleText(year, "2006");
     }
 
-    public void signUpLinks() {
+    public void clickOnSignUpLinks() {
         signUpLink.click();
     }
 
-    public void genderSelectForFemale() {
+    public void selectGenderForFemale() {
         femaleRadioButton.click();
     }
-    public void genderSelectForMale() {
+    public void selectGenderForMale() {
         maleRadioButton.click();
     }
-    public void genderSelectForCustom() {
+    public void selectGenderForCustom() {
         customRadioButton.click();
     }
 
-    public void signUpButton() {
+    public void clickOnSignUpButton() {
         signUpButton.click();
     }
     public boolean signUpButtonDisplay() {

@@ -14,7 +14,7 @@ public class CommentsOnPostTest extends TestBase {
     CommentsOnPost commentsOnPost;
 
     @Test
-    public void commentsOnPostTest(){
+    public void userCanValidateCommentsOnPost(){
         commentsOnPost = PageFactory.initElements(driver, CommentsOnPost.class);
         commentsOnPost.loginHomePage(prop.getProperty("username"),prop.getProperty("password"));
         String expected = commentsOnPost.titleOfHomePage();

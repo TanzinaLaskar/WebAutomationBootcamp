@@ -1,5 +1,5 @@
-2021-07-10 10:07:308 INFO  TestBase:243 - driver closed
-2021-07-10 10:07:590 INFO  LikeOnPostTest:42 - User enter email
-2021-07-10 10:07:645 INFO  LikeOnPostTest:42 - User enter pass
-2021-07-10 10:07:706 INFO  LikeOnPostTest:42 - User click loginButton
-2021-07-10 10:07:216 INFO  TestBase:243 - driver closed
+2021-07-12 17:07:940 INFO  TestBase:243 - driver closed
+2021-07-12 17:07:797 INFO  LikeOnPostTest:42 - User enter email
+2021-07-12 17:07:863 INFO  LikeOnPostTest:42 - User enter pass
+2021-07-12 17:07:972 INFO  LikeOnPostTest:42 - User click loginButton
+2021-07-12 17:07:593 INFO  TestBase:243 - driver closed

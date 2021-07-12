@@ -10,13 +10,13 @@ public class PoliticesLinkTest extends TestBase {
 
     private static final Logger logger = Logger.getLogger(PoliticesLinkTest.class);
 
-    private void verifyPoliticesLinkTest() {
+    private void verifyPoliticsLinkTest() {
     }
 
     @Test
-    public void readPoliticsLinkNewsTest(){
+    public void usersCanValidateReadPoliticsLinkNews(){
         PoliticesLinkTest politicesLinkTest = PageFactory.initElements(driver,PoliticesLinkTest.class);
-        politicesLinkTest.verifyPoliticesLinkTest();
+        politicesLinkTest.verifyPoliticsLinkTest();
         ExtentTestManager.log("Read news politics page",logger);
     }
 

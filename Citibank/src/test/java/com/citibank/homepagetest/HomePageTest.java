@@ -15,15 +15,15 @@ public class HomePageTest extends TestBase {
 
 
     @Test
-    public void validateTitleTest(){
+    public void usersCanValidateTitle(){
         homePage = PageFactory.initElements(driver,HomePage.class);
-       String expectedTitle = homePage.titleOfHomePage();
+       String expectedTitle = homePage.getTitleOfHomePage();
        String actualTitle = "Online Banking, Mortgages, Personal Loans, Investing | Citi.com";
         Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
     }
 
     @Test
-    public void validateImageTest(){
+    public void usersCanValidateImage(){
         Assert.assertTrue(homePage.imageOnDisplay(),"Image not display");
         ExtentTestManager.log("Image display properly",logger);
     }

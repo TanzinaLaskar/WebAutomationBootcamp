@@ -10,9 +10,9 @@ public class LoginTest extends TestBase {
     private static final Logger logger = Logger.getLogger(LoginTest.class);
 
     @Test
-    public void verifyLoginTest(){
+    public void userCanValidateLoginTest(){
         LoginPage loginPage =PageFactory.initElements(driver,LoginPage.class);
-        loginPage.VerifyLoginPage();
+        loginPage.usersCanValidateLoginPage();
         ExtentTestManager.log("User successfully log in account",logger);
     }
 

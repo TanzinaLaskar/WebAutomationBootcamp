@@ -3,9 +3,9 @@ package com.citibank.dataprovider;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderTest {
-    //cityBank data
-    @DataProvider(name ="getDataForCitybankCredential")
-    public static Object [][] cignaPlanData(){
+    //citiBank data
+    @DataProvider(name ="getDataForCitibankCredential")
+    public static Object [][] citibankPlanData(){
         return new Object[][]{
                 {"18745","Tom12354"},
         };

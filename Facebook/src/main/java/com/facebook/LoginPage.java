@@ -28,16 +28,16 @@ public class LoginPage extends TestBase {
   WebElement findYourAccountText;
 
 
-  public void emailField() {
+  public void enterEmailField() {
     emailField.sendKeys("tanzinalaskarit@gmail.com");
   }
 
 
-  public void passwordField() {
+  public void enterPasswordField() {
     passwordField.sendKeys("Official1");
   }
 
-  public void loginButton() {
+  public void clickOnLoginButton() {
     loginButton.click();
   }
 
@@ -49,9 +49,7 @@ public class LoginPage extends TestBase {
     return facebookLogo.isDisplayed();
   }
 
-  public String titleOfLoginPage() {
-    return getTitle();
-  }
+  public String getTitleOfLoginPage() { return getTitle(); }
 
   public boolean errorMessageTest() {
     return errorMessageForWrongCredential.isDisplayed();
@@ -61,7 +59,7 @@ public class LoginPage extends TestBase {
    return findYourAccountText.isDisplayed();
   }
 
-  public void forgotButton(){
+  public void clickOnForgotButton(){
     forgotButton.click();
   }
 

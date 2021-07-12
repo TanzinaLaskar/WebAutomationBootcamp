@@ -13,10 +13,10 @@ public class CreditCardSearchTest extends TestBase {
     private static final Logger logger = Logger.getLogger(CreditCardTest.class);
 
     @Test
-    public void searchForCreditCardTest(){
+    public void usersCanValidateSearchForCreditCard(){
         SearchForCreditCard searchForCreditCard = PageFactory.initElements(driver,SearchForCreditCard.class);
         searchForCreditCard.verifyAnyCreditCardInSearchBox();
-        String expectedText= searchForCreditCard.searchResultTText();
+        String expectedText= searchForCreditCard.getSearchResultTText();
         String actualText = "travel credit card";
         Assert.assertEquals(expectedText,actualText,"search not match");
     }

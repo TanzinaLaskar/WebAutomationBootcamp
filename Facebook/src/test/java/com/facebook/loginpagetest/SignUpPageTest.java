@@ -14,27 +14,27 @@ public class SignUpPageTest extends TestBase {
     SignUpPage signUpPage;
 
     @Test(dataProviderClass = DataProviderTest.class, dataProvider = "getDataForRegistrationTest")
-    public void createAccountPageTest(String firstName, String lastName, String mobileNumber, String newPassword, String month) {
+    public void validateUserCanSignup(String firstName, String lastName, String mobileNumber, String newPassword, String month) {
         signUpPage = PageFactory.initElements(driver, SignUpPage.class);
         windowsFullPageScrollDown();
-        signUpPage.signUpLinks();
-        signUpPage.firstName(firstName);
+        signUpPage.clickOnSignUpLinks();
+        signUpPage.enterFirstName(firstName);
         ExtentTestManager.log(firstName + " Enter in text field", logger);
-        signUpPage.lastName(lastName);
+        signUpPage.enterLastName(lastName);
         ExtentTestManager.log(lastName + " Enter in text field", logger);
-        signUpPage.mobileNumber(mobileNumber);
+        signUpPage.enterMobileNumber(mobileNumber);
         ExtentTestManager.log(mobileNumber + " Enter in text field", logger);
-        signUpPage.newPassword(newPassword);
+        signUpPage.enterNewPassword(newPassword);
         ExtentTestManager.log(newPassword + " Enter in text field", logger);
         signUpPage.selectMonthFromDropDown(month);
         ExtentTestManager.log("User change month", logger);
-        signUpPage.dayDropDown();
+        signUpPage.selectDayFromDropDown();
         ExtentTestManager.log("User change day", logger);
-        signUpPage.yearDropDown();
+        signUpPage.selectYearDropDown();
         ExtentTestManager.log("User change year", logger);
-        signUpPage.genderSelectForFemale();
+        signUpPage.selectGenderForFemale();
         ExtentTestManager.log("User change as female", logger);
-        signUpPage.signUpButton();
+        signUpPage.clickOnSignUpButton();
         Assert.assertTrue(signUpPage.signUpButtonDisplay());
         Assert.assertTrue(signUpPage.createAccountText());
         String expectedTitle = signUpPage.signUpPageTitle();
@@ -45,27 +45,27 @@ public class SignUpPageTest extends TestBase {
     }
 
     @Test(dataProviderClass = DataProviderTest.class, dataProvider = "getDataForRegistrationTest")
-    public void createAccountPageforValidteUserTest(String firstName, String lastName, String mobileNumber, String newPassword, String month) {
+    public void validateUserCanCreateAccount(String firstName, String lastName, String mobileNumber, String newPassword, String month) {
         signUpPage = PageFactory.initElements(driver, SignUpPage.class);
         windowsFullPageScrollDown();
-        signUpPage.signUpLinks();
-        signUpPage.firstName(firstName);
+        signUpPage.clickOnSignUpLinks();
+        signUpPage.enterFirstName(firstName);
         ExtentTestManager.log(firstName + " Enter in text field", logger);
-        signUpPage.lastName(lastName);
+        signUpPage.enterLastName(lastName);
         ExtentTestManager.log(lastName + " Enter in text field", logger);
-        signUpPage.mobileNumber(mobileNumber);
+        signUpPage.enterMobileNumber(mobileNumber);
         ExtentTestManager.log(mobileNumber + " Enter in text field", logger);
-        signUpPage.newPassword(newPassword);
+        signUpPage.enterNewPassword(newPassword);
         ExtentTestManager.log(newPassword + " Enter in text field", logger);
         signUpPage.selectMonthFromDropDown(month);
         ExtentTestManager.log("User change month", logger);
-        signUpPage.dayDropDown();
+        signUpPage.selectDayFromDropDown();
         ExtentTestManager.log("User change day", logger);
-        signUpPage.yearDropDown();
+        signUpPage.selectYearDropDown();
         ExtentTestManager.log("User change year", logger);
-        signUpPage.genderSelectForMale();
+        signUpPage.selectGenderForMale();
         ExtentTestManager.log("User change as male", logger);
-        signUpPage.signUpButton();
+        signUpPage.clickOnSignUpButton();
         Assert.assertTrue(signUpPage.signUpButtonDisplay());
         Assert.assertTrue(signUpPage.createAccountText());
         String expectedTitle = signUpPage.signUpPageTitle();

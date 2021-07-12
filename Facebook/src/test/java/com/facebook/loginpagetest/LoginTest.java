@@ -15,13 +15,13 @@ public class LoginTest extends TestBase {
 
     //Positive Test
     @Test(priority = 1)
-    public void VerifyLoginTest(){
+    public void userCanValidateLogin(){
         loginPage = PageFactory.initElements(driver,LoginPage.class);
-        loginPage.emailField();
-        loginPage.passwordField();
-        loginPage.loginButton();
+        loginPage.enterEmailField();
+        loginPage.enterPasswordField();
+        loginPage.clickOnLoginButton();
         ExtentTestManager.log("User click on login button",logger);
-        String expectedTitle = loginPage.titleOfLoginPage();
+        String expectedTitle = loginPage.getTitleOfLoginPage();
         String actualTitle= "Facebook - Log In or Sign Up";
         Assert.assertEquals(expectedTitle,actualTitle,"Title did not match");
         ExtentTestManager.log("User get title as expected",logger);
@@ -29,42 +29,42 @@ public class LoginTest extends TestBase {
 
 
     @Test(priority = 2)
-    public void verifyOnlyLoginButtonTest(){
+    public void userCanValidateLoginButton(){
         loginPage = PageFactory.initElements(driver,LoginPage.class);
         Assert.assertTrue(loginPage.loginButtonVerify());
         ExtentTestManager.log("in log in page login button is present",logger);
     }
 
     @Test(priority = 3)
-    public void verifyUserNameTest(){
+    public void userCanValidateUserName(){
         loginPage = PageFactory.initElements(driver,LoginPage.class);
-        loginPage.emailField();
-        loginPage.loginButton();
+        loginPage.enterPasswordField();
+        loginPage.clickOnLoginButton();
         Assert.assertTrue(loginPage.errorMessageTest());
         ExtentTestManager.log("User enter only email field and user got error message as expected",logger);
     }
 
     @Test(priority = 4)
-    public void verifyPasswordTest(){
+    public void userCanValidatePassword(){
         loginPage = PageFactory.initElements(driver,LoginPage.class);
-        loginPage.passwordField();
-        loginPage.loginButton();
+        loginPage.enterPasswordField();
+        loginPage.clickOnLoginButton();
         Assert.assertTrue(loginPage.errorMessageTest());
         ExtentTestManager.log("User enter only email field and user got error message as expected",logger);
     }
 
 
      @Test(priority = 5)
-        public void verifyImageTest(){
+        public void userCanValidateLogo(){
          loginPage = PageFactory.initElements(driver,LoginPage.class);
           Assert.assertTrue(loginPage.facebookLogo());
           ExtentTestManager.log("FaceBook Logo present in log in page",logger);
      }
 
     @Test(priority = 6)
-    public void forgotLinkTest(){
+    public void userCanClickOnForgotLink(){
         loginPage = PageFactory.initElements(driver,LoginPage.class);
-        loginPage.forgotButton();
+        loginPage.clickOnForgotButton();
         Assert.assertTrue(loginPage.findYourAccountText());
         ExtentTestManager.log("User get expected Text",logger);
     }

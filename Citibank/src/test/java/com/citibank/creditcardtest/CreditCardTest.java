@@ -13,7 +13,7 @@ public class CreditCardTest extends TestBase {
     private static final Logger logger = Logger.getLogger(CreditCardTest.class);
     CreditCardPage creditCardPage;
     @Test
-    public void smallBusinessCreditCardTest(){
+    public void usersCanValidateSmallBusinessCreditCard(){
          creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifySmallBusinessCreditCard();
@@ -22,7 +22,7 @@ public class CreditCardTest extends TestBase {
     }
 
     @Test
-    public void BalanceTransferCreditCardTest(){
+    public void usersCanValidateBalanceTransferCreditCard(){
          creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
          sleepFor(3);
          creditCardPage.verifyBalanceTransferCreditCard();
@@ -32,7 +32,7 @@ public class CreditCardTest extends TestBase {
          ExtentTestManager.log("User in balance transfer credit card page",logger);
     }
     @Test
-    public void  verifyZeroPercentAprCreditCardTest(){
+    public void  usersCanValidateZeroPercentAprCreditCard(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyZeroPercentAprCreditCard();
@@ -42,7 +42,7 @@ public class CreditCardTest extends TestBase {
         ExtentTestManager.log("User ZeroPercentAprCreditCard page",logger);
     }
     @Test
-    public void verifyRewardCreditCardTest(){
+    public void usersCanValidateRewardCreditCard(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyRewardCreditCard();
@@ -53,7 +53,7 @@ public class CreditCardTest extends TestBase {
     }
 
     @Test
-    public void verifyCashBackCreditCardTest(){
+    public void usersCanValidateCashBackCreditCard(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyCashBackCreditCard();
@@ -63,7 +63,7 @@ public class CreditCardTest extends TestBase {
         ExtentTestManager.log("User in cash back credit card page",logger);
     }
     @Test
-    public void verifyTravelCreditCardTest(){
+    public void usersCanValidateTravelCreditCard(){
         creditCardPage = PageFactory.initElements(driver,CreditCardPage.class);
         sleepFor(3);
         creditCardPage.verifyTravelCreditCard();

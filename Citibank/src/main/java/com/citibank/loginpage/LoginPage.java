@@ -18,11 +18,11 @@ public class LoginPage extends TestBase {
     public void verifyPassword(String password){
         userId.sendKeys(password);
     }
-    public void verifySignOnButton(){
+    public void clickSignOnButton(){
        signOnButton.click();
     }
 
-   public String titleOfHomePage(){
+   public String getTitleOfHomePage(){
       return getTitle();
    }
 

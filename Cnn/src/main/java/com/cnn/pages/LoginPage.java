@@ -19,7 +19,7 @@ public class LoginPage  {
 
 
 
-  public void VerifyLoginPage(){
+  public void usersCanValidateLoginPage(){
     userAccount.click();
     emailAddress.sendKeys("Tommy123@gmail.com");
     password.sendKeys("123456");
